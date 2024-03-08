@@ -13,8 +13,8 @@
 // then(response => return response.text());
 // then(data => console.log(data));
 
-const adres = 'https://jsonplaceholder.typicode.com/users';
+// const adres = 'https://jsonplaceholder.typicode.com/users';
 
-fetch(adres)
-    .then(res => return res.json())
-    .then(data => console.log(data));
+// fetch(adres)
+//     .then(res => return res.json())
+//     .then(data => console.log(data));
