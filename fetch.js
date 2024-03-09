@@ -18,6 +18,15 @@
 // fetch(adres)
 //     .then(res => return res.json())
 //     .then(data => console.log(data));
-fetch("https://jsonplaceholder.typicode.com/")
-    .then(response => return response.json())
-    .then(data => console.log(data));
+fetch("https://jsonplaceholder.typicode.com/todos")
+    .then((response) => response.json())
+    .then(function (todos) {
+        todos.forEach((todo) => {
+            console.log(todo.title);
+        });
+    });
+
+    fetch("https://jsonplaceholder.typicode.com/users")
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((err) => console.log(err));
