@@ -83,4 +83,22 @@ getComments(
             console.error(error);
         }
     }
-)
+);
+
+console.log("Hello,");
+
+const asyncExample = () => {
+    setTimeout(() => {
+        console.log("*?");
+    },1000) ;
+};
+asyncExample();
+console.log("World.");
+
+const xhr = new XMLHttpRequest();
+xhr.open("get",'https://jsonplaceholder.typicode.com/posts',true);
+xhr.readyStatechange = () => {
+    if(xhr.readyState === 4 && xhr.status === 200){
+        console.log(xhr);
+    }
+};
