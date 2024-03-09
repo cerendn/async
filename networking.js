@@ -96,9 +96,10 @@ asyncExample();
 console.log("World.");
 
 const xhr = new XMLHttpRequest();
-xhr.open("get",'https://jsonplaceholder.typicode.com/posts',true);
-xhr.readyStatechange = () => {
-    if(xhr.readyState === 4 && xhr.status === 200){
-        console.log(xhr);
+xhr.open("GET",'https://jsonplaceholder.typicode.com/posts',true);
+xhr.send();
+xhr.onreadystatechange = () => {
+    if(xhr.readyState === XMLHttpRequest.DONE){
+        console.log(xhr.responseText);
     }
 };
