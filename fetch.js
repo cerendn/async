@@ -18,3 +18,6 @@
 // fetch(adres)
 //     .then(res => return res.json())
 //     .then(data => console.log(data));
+fetch("https://jsonplaceholder.typicode.com/")
+    .then(response => return response.json())
+    .then(data => console.log(data));
