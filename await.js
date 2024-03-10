@@ -28,3 +28,8 @@
 //     }).catch(error => {
 //         console.error(error);
 //     })
+//async-await
+const jspURI = "https://jsonplaceholder.typicode.com";
+
+ const response = fetch(`${jspURI}/comments/1`);
+ console.log(response); //Promise pending
