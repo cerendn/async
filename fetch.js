@@ -69,3 +69,17 @@ fetch('https://jsonplaceholder.typicode.com/posts?userId=3')
  })
     .then((res) => res.json())
     .then((json) => console.log(json));
+
+    //patch
+fetch('https://jsonplaceholder.typicode.com/posts/5', {
+    method: 'PATCH',
+    body: JSON.stringify({
+      title: 'foo',
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+  
