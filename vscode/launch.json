@@ -1,0 +1,39 @@
+// Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+
+//Bu, bir Visual Studio Code (VS Code) proje dizini içinde yer alan launch.json adlı bir dosyanın içeriğini gösteriyor. Bu dosya, VS Code'un bir projeyi çalıştırırken veya hata ayıklarken nasıl davranacağını yapılandırmak için kullanılır.
+// "version": "0.2.0": Bu, launch.json dosyasının yapılandırma biçimini belirten sürüm numarasıdır.
+
+// "configurations": Bu özellik, VS Code'un farklı yapılandırmaları tanımlamak için kullanılan bir dizi yapılandırma öğesini içerir.
+
+// "name": Bu, yapılandırmanın adını belirtir. Bu isimler, VS Code'un çalıştırma veya hata ayıklama seçeneklerini seçerken görüntülenecek.
+
+// "port": Bu, Chrome tarayıcısına bağlanırken kullanılacak olan hedef bağlantı noktasını belirtir.
+
+// "request": Bu, yapılandırmanın ne tür bir istekte bulunacağını belirtir. "attach" değeri, bir uzak hedefe (örneğin, bir tarayıcıya) bağlanmayı sağlar. "launch" ise yerel bir uygulamayı başlatır.
+
+// "type": Bu, yapılandırmanın hedefinin türünü belirtir. "chrome", Chrome tarayıcısını hedef alır.
+
+// "webRoot": Bu, projenin kök dizinini belirtir.
+
+// "url": Bu, tarayıcının başlatılacağı URL'yi belirtir. Bu örnekte, localhost üzerinde çalışan bir sunucuya yönlendiriliyor.
+
+// Bu yapılandırma, VS Code'u Chrome tarayıcısına bağlamak veya yerel bir sunucuyu başlatmak için kullanılabilir. Bu, web uygulamalarını geliştirirken kullanışlı olabilir.
