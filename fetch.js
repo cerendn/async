@@ -59,5 +59,13 @@ fetch('https://jsonplaceholder.typicode.com/posts?userId=3')
 
 //update
  fetch('https://jsonplaceholder.typicode.com/posts/1',{
-    
+    method: "PUT",
+    body: JSON.stringify({
+        id:1,
+        title:"foo",
+        body: "bar",
+        userId: ","
+    }),
  })
+    .then((res) => res.json())
+    .then((json) => console.log(json));
