@@ -12,5 +12,15 @@ function doOperation() {
     });
 }
 
+async function main() {
+    try {
+        console.log("İşlem başlatılıyor...");
+        const result = await doOperation() ;
+        console.log(result);
+    } catch (error) {
+        console.error(error);
+    }
+}
+main();
 
  
