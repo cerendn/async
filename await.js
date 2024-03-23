@@ -65,3 +65,4 @@ getData(true)
 // console.log("outer 4");
 
 const pokemonData = await pokemonResponse.json();
+const pokemonTypeData = await pokemonType.json();
