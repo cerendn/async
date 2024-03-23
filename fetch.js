@@ -82,4 +82,4 @@ fetch('https://jsonplaceholder.typicode.com/posts/5', {
   })
     .then((response) => response.json())
     .then((json) => console.log(json));
-  
+    const pokemonResponse = await fetch('https://pokeapi.co/api/v2/pokemon-species/');  

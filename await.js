@@ -63,3 +63,5 @@ getData(true)
 // getCommentsWithThen();
 // console.log("outer 3");
 // console.log("outer 4");
+
+const pokemonData = await pokemonResponse.json();
